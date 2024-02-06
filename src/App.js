@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+//styles
 import "../src/styles/partials/_global.scss";
 
 //Components
@@ -18,7 +20,7 @@ function App() {
       <div className="bodyContent">
         <Header />
         <Routes>
-          <Route />
+          <Route path="/" element={<HomePage/>} />
         </Routes>
         <Footer className="tempo" />
       </div>

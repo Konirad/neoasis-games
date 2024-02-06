@@ -1,0 +1,67 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.hero {
+  &__container {
+    @include tabletStyle {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__header {
+    color: $accents;
+    font-size: 3rem;
+    margin-bottom: unset;
+    text-overflow:unset;
+
+    @include tabletStyle {
+        font-size: 4.5rem;
+    }
+  }
+
+  &__highlight {
+    color: $highlight-bright;
+  }
+
+  &__logline {
+    font-size: 1.25rem;
+
+    @include desktopStyle {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__btn {
+    width: 30%;
+    background-color: $highlight-mellow;
+    padding: 1rem;
+    border-radius: 25px;
+
+    @include desktopStyle {
+      width: 25%;
+    }
+  }
+
+  &__image {
+    display: none;
+
+    @include tabletStyle {
+      display: inline-block;
+      margin-right: -3rem;
+      overflow: hidden;
+    }
+  }
+
+  &__imageContainer {
+    background-image: url(../../assets/04heroImg/Rectangle14.png);
+    background-size: contain;
+    background-size: 115%;
+    background-position-y: top;
+  }
+
+  &__copyContainer {
+    @include desktopStyle {
+      margin: auto;
+    }
+  }
+}
