@@ -1,0 +1,14 @@
+@use "../partials/variables" as *;
+
+//MEDIA QUERIES
+@mixin tabletStyle {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktopStyle {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}

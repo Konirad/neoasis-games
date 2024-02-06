@@ -1,0 +1,20 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+body {
+  background-color: $background;
+  color: white;
+  margin: $mobile-margins;
+
+  @include tabletStyle {
+    margin: $tablet-margins;
+  }
+
+  @include desktopStyle {
+    margin: $desktop-margins;
+  }
+}
+
+a {
+  text-decoration: none;
+}
