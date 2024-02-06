@@ -1,0 +1,14 @@
+@use "../../styles/partials/mixins" as *;
+
+.siteTitle {
+  font-weight: 100;
+  color: white;
+
+  @include tabletStyle {
+    font-size: 2rem;
+  }
+
+  @include desktopStyle {
+    font-size: 2.75rem;
+  }
+}

@@ -4,17 +4,29 @@
 body {
   background-color: $background;
   color: white;
-  margin: $mobile-margins;
+  margin: 0;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 $mobile-margins;
 
   @include tabletStyle {
-    margin: $tablet-margins;
+    margin: 0 $tablet-margins;
   }
 
   @include desktopStyle {
-    margin: $desktop-margins;
+    margin: 0 $desktop-margins;
   }
 }
 
 a {
   text-decoration: none;
+}
+
+.bodyContent {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../src/styles/partials/_global.scss";
 
+//Components
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 //pages
 import AboutPage from "./pages/About/AboutPage";
@@ -13,10 +15,13 @@ import ProductPage from "./pages/Product/ProductPage";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route />
-      </Routes>
+      <div className="bodyContent">
+        <Header />
+        <Routes>
+          <Route />
+        </Routes>
+        <Footer className="tempo" />
+      </div>
     </BrowserRouter>
   );
 }

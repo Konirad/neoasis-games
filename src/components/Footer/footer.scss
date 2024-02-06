@@ -1,0 +1,66 @@
+@use "../../styles/partials/partials" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto $mobile-margins 0;
+
+  &__logo {
+    @include tabletStyle {
+      margin-left: $tablet-margins;
+    }
+  }
+
+  &__container {
+    display: flex;
+    background-color: $highlight-bright;
+    border-radius: 25px 25px 0 0;
+  }
+
+  &__links {
+    display: flex;
+    margin: $mobile-margins;
+    justify-content: space-between;
+
+    @include tabletStyle {
+      width: 40%;
+      margin: auto;
+    }
+  }
+
+  &__linkItem {
+    font-size: 0.6rem;
+    margin-bottom: unset;
+
+    @include tabletStyle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+  }
+
+  &__title {
+    @media screen and (max-width: 767px) {
+      font-size: 1rem;
+    }
+
+    width: 50%;
+    margin: auto;
+
+    @extend .siteTitle;
+  }
+
+  &__copyright {
+    font-size: 0.5rem;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+    margin-right: 0.5rem;
+
+    @include tabletStyle {
+      margin-right: $tablet-margins;
+    }
+  }
+}
