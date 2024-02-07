@@ -1,0 +1,49 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.testimonials {
+  &__headerContainer {
+    width: 95%;
+    height: 75px;
+    background: linear-gradient(to right, $highlight-bright, purple);
+    margin: 2rem auto;
+    border-radius: 20px 0 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tabletStyle {
+      width: 85%;
+      margin: 1rem auto;
+    }
+
+    @include desktopStyle {
+      height: 100px;
+      width: 75%;
+      margin: 2rem auto;
+    }
+  }
+
+  &__header {
+    font-size: 1rem;
+    font-weight: 100;
+
+    @media screen and (min-width: 476px) {
+      font-size: 1.5rem;
+    }
+
+    @include tabletStyle {
+      font-size: 2rem;
+    }
+
+    @include desktopStyle {
+      font-size: 3rem;
+    }
+  }
+
+  &__quotes {
+    margin: auto;
+    width: 70%;
+  }
+}

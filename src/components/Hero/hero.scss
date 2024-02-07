@@ -3,6 +3,7 @@
 
 .hero {
   &__container {
+    margin: $mobile-margins;
     @include tabletStyle {
       display: flex;
       justify-content: space-between;
@@ -12,10 +13,10 @@
     color: $accents;
     font-size: 3rem;
     margin-bottom: unset;
-    text-overflow:unset;
+    text-overflow: unset;
 
     @include tabletStyle {
-        font-size: 4.5rem;
+      font-size: 4.5rem;
     }
   }
 
@@ -46,9 +47,11 @@
     display: none;
 
     @include tabletStyle {
-      display: inline-block;
-      margin-right: -3rem;
-      overflow: hidden;
+      display: inline;
+      position: relative;
+      //margin-right: -3rem;
+      width: 100%;
+      right: -15px;
     }
   }
 
