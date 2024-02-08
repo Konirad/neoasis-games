@@ -1,0 +1,65 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.newWorlds {
+  &__header {
+    color: $highlight-bright;
+
+    font-size: 2.25rem;
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto;
+
+    @include tabletStyle {
+      font-size: 3.25rem;
+      margin: 1.5rem auto;
+    }
+
+    @include desktopStyle {
+      font-size: 6rem;
+      width: 50%;
+      margin: $desktop-margins auto;
+    }
+
+    &--discover {
+      @include tabletStyle {
+        color: $accents;
+      }
+    }
+  }
+
+  &__image {
+    border-radius: 10px;
+    background-image: url(../../assets/07newWorlds/rectangle16.png);
+    background-size: cover;
+    width: 75%;
+
+    @include desktopStyle {
+      display: none;
+    }
+  }
+
+  &__imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__imagesContainer {
+    display: none;
+
+    @include desktopStyle {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: auto;
+    }
+  }
+
+  &__images {
+    @include desktopStyle {
+      width: 28%;
+    }
+  }
+}
