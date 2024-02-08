@@ -34,6 +34,13 @@
 
   &__text,
   &__copy {
+
+    font-size: 1rem;
+
+    @include tabletStyle {
+        font-size: 1.5rem;
+    }
+
     @include desktopStyle {
       font-size: 2rem;
     }

@@ -1,12 +1,13 @@
+
 import React from "react";
 
-//styles
+//style
 import "./testimonials.scss";
 
 //components
 import Quote from "../Quote/Quote";
 
-//assets
+//assets 
 import pic1 from "../../assets/06testimonials/temp img/pic1.png";
 import pic2 from "../../assets/06testimonials/temp img/pic2.png";
 import pic3 from "../../assets/06testimonials/temp img/pic3.png";
@@ -21,7 +22,7 @@ function Testimonials() {
     },
     {
       image: pic2,
-      text: "Endless replay-ability with different approaches0",
+      text: "Endless replay-ability with different approaches.",
       name: "- Steve",
     },
     {
