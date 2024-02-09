@@ -1,0 +1,68 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.mechanics {
+  display: flex;
+  flex-direction: column;
+  margin: $mobile-margins;
+
+  &__header {
+    color: $highlight-mellow;
+    text-align: center;
+    font-size: 2.5rem;
+
+    @include tabletStyle {
+      font-size: 3.5rem;
+      margin: 1rem auto;
+    }
+    @include desktopStyle {
+      font-size: 4.25rem;
+      margin: 2rem auto;
+    }
+  }
+
+  &__line {
+    &Horz {
+      width: 100%;
+
+      @include tabletStyle {
+        width: 80%;
+        margin: auto;
+      }
+
+      @include desktopStyle {
+        width: 60%;
+      }
+    }
+
+    &Vert {
+      height: 25rem;
+      margin: auto;
+      position: relative;
+      top: -3px;
+
+      @include tabletStyle {
+        top: -6px;
+      }
+    }
+  }
+
+  &__blurbCollection {
+    display: flex;
+    flex-direction: row;
+
+    &Left,
+    &Right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include tabletStyle {
+        display: grid;
+        grid-template-columns: repeat(2, 0.45fr);
+      }
+    }
+  }
+}

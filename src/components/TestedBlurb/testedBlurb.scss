@@ -1,0 +1,94 @@
+@use "../../styles/partials/mixins" as *;
+
+.blurb {
+  &__container {
+    background-color: purple;
+    width: 5.5rem;
+    height: 1.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+
+    text-align: center;
+  }
+}
+
+.optA,
+.optB,
+.optC {
+  width: 5.75rem;
+
+  @media screen and (min-width: 525px) {
+    width: 8rem;
+  }
+
+  @include tabletStyle {
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  @include desktopStyle {
+    width: 12rem;
+    height: 4.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+.optA {
+  transform: rotate(0deg);
+  animation: rotateAnimation 5s ease-in-out infinite;
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.optB {
+  transform: rotate(0deg);
+  animation: rotateAnimation 5s ease-in-out infinite;
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-3deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.optC {
+  transform: rotate(0deg);
+  animation: rotateAnimation 5s ease-in-out infinite;
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(2deg);
+    }
+    50% {
+      transform: rotate(-2deg);
+    }
+
+    100% {
+      transform: rotate(2deg);
+    }
+  }
+}
