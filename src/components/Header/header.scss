@@ -114,3 +114,11 @@
     justify-content: space-between;
   }
 }
+
+li {
+  color: white;
+
+  &:hover {
+    color: $highlight-bright;
+  }
+}

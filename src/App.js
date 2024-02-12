@@ -20,7 +20,11 @@ function App() {
       <div className="bodyContent">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/products" element={<ProductPage />} />
         </Routes>
         <Footer className="tempo" />
       </div>

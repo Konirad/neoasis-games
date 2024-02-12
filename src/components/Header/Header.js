@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 //assets
@@ -5,7 +6,6 @@ import headerLogo from "../../assets/02 HEADER/LOGO MINT.svg";
 
 //styles
 import "./header.scss";
-import { Link } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,19 +29,19 @@ function Header() {
           onClick={toggleMenu}
         >
           <ul className={`menu ${menuOpen ? "open" : ""}`}>
-            <li className="hamburger-item">Products</li>
-            <li className="hamburger-item">About</li>
-            <li className="hamburger-item">Blog</li>
-            <li className="hamburger-item">Contact</li>
+            <Link to={"/products"}><li className="hamburger-item">Products</li></Link>
+            <Link to={"/about"}><li className="hamburger-item">About</li></Link>
+            <Link to={"/blog"}><li className="hamburger-item">Blog</li></Link>
+            <Link to={"/contact"}><li className="hamburger-item">Contact</li></Link>
           </ul>
         </div>
         <div className="mobileBox">
           <div className="test">
             <ul className={`menuTablet`}>
-              <li className="menuTablet__item">Products</li>
-              <li className="menuTablet__item">About</li>
-              <li className="menuTablet__item">Blog</li>
-              <li className="menuTablet__item">Contact</li>
+              <Link to={"/products"}><li className="menuTablet__item">Products</li></Link>
+              <Link to={"/about"}><li className="menuTablet__item">About</li></Link>
+              <Link to={"/blog"}><li className="menuTablet__item">Blog</li></Link>
+              <Link to={"/contact"}><li className="menuTablet__item">Contact</li></Link>
             </ul>
           </div>
         </div>

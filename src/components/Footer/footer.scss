@@ -36,20 +36,18 @@
     margin-bottom: unset;
 
     @include tabletStyle {
-        font-size: 1rem;
-        margin-bottom: 1rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
     }
 
     @include desktopStyle {
       font-size: 2rem;
     }
 
-    
     &:hover {
       color: $highlight-bright;
-      transition: color .25s ease;
+      transition: color 0.25s ease;
     }
-
   }
 
   &__title {

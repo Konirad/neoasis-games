@@ -1,0 +1,13 @@
+@use "../../styles/partials/variables" as *;
+
+.productPage {
+  &__header {
+    color: $highlight-bright;
+    text-align: center;
+    font-size: 3.25rem;
+  }
+
+  &__headerAlt {
+    color: $highlight-mellow;
+  }
+}
