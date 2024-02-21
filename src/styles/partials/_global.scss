@@ -1,9 +1,9 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-* {
-  outline: 1px SOLID RED;
-}
+// * {
+//   outline: 1px SOLID RED;
+// }
 
 body {
   background-color: $background;

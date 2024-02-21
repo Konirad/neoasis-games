@@ -1,0 +1,116 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.contactPage {
+  &__header {
+    color: $highlight-mellow;
+    text-align: center;
+
+    @include tabletStyle {
+      text-align: left;
+      font-size: 3rem;
+      margin: $tablet-margins;
+    }
+
+    @include desktopStyle {
+      margin-left: $desktop-margins;
+      margin-bottom: unset;
+      font-size: 4rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    justify-content: space-between;
+    width: 100%;
+
+    @include tabletStyle {
+      align-items: flex-start;
+      margin-left: $tablet-margins;
+      width: 60%;
+    }
+  }
+
+  &__button {
+    background-color: $highlight-mellow;
+    padding: 0.75rem 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: unset;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: unset;
+      color: $highlight-mellow;
+      border: 1px solid $highlight-mellow;
+    }
+
+    @include desktopStyle {
+      margin-left: $desktop-margins;
+      margin-top: $desktop-margins;
+    }
+  }
+
+  &__label {
+    margin: 1rem;
+    margin-bottom: 0.25rem;
+    margin-top: 2rem;
+  }
+
+  &__input {
+    border: unset;
+    border-radius: 0.225rem;
+    padding: 1rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include desktopStyle {
+      margin: $desktop-margins;
+    }
+  }
+
+  &__cta {
+    display: none;
+
+    @include tabletStyle {
+      display: inline;
+      text-align: right;
+      font-size: 1.5rem;
+      margin: 2rem auto;
+      margin-right: $tablet-margins;
+      font-weight: bold;
+      color: $highlight-mellow;
+    }
+
+    @include desktopStyle {
+      font-size: 3rem;
+      margin-right: unset;
+    }
+
+    &Highlight {
+      color: $highlight-bright;
+      margin: auto;
+    }
+  }
+}
+
+.message {
+  width: 60%;
+  height: 4rem;
+
+  @include tabletStyle {
+    width: 90%;
+  }
+}
+
+.email {
+  width: 40%;
+  height: 0.25rem;
+}

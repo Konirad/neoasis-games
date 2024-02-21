@@ -8,6 +8,15 @@
     justify-content: space-between;
 
     margin: $mobile-margins;
+
+    @include tabletStyle {
+      margin: 0 $tablet-margins;
+    }
+
+    
+    @include desktopStyle {
+      margin: 0 $desktop-margins;
+    }
   }
 
   &__title {

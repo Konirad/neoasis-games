@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 
 //styles
 import "../src/styles/partials/_global.scss";
@@ -13,6 +13,7 @@ import BlogPage from "./pages/Blog/BlogPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import HomePage from "./pages/Home/HomePage";
 import ProductPage from "./pages/Product/ProductPage";
+import GamePage from "./pages/Game/GamePage";
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          {/*<Route path="/game" element={<GamePage />} />*/}
           <Route path="/products" element={<ProductPage />} />
+          <Route path="products/:gameAtHand" element={<GamePage />} />
         </Routes>
         <Footer className="tempo" />
       </div>

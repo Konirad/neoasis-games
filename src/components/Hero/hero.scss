@@ -7,6 +7,11 @@
     @include tabletStyle {
       display: flex;
       justify-content: space-between;
+      margin-left: $tablet-margins;
+    }
+
+    @include desktopStyle {
+      margin-left: $desktop-margins;
     }
   }
   &__header {
@@ -66,5 +71,39 @@
     @include desktopStyle {
       margin: auto;
     }
+  }
+
+  &__ellip {
+    position: absolute;
+    width: 65%;
+    margin-left: 1rem;
+
+    animation: ellipRotate 9s infinite ease-in-out;
+
+    @include tabletStyle {
+      width: 60%;
+      margin-left: 2rem;
+    }
+
+    @include desktopStyle {
+      width: 50%;
+      margin-left: 9rem;
+      top: 50px;
+    }
+
+    @keyframes ellipRotate {
+      0% {
+        transform: translateY(0) rotate(15deg);
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(-155deg);
+      }
+
+      100% {
+        transform: translateY(0) rotate(15deg);
+      }
+    }
+
   }
 }

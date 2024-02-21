@@ -1,0 +1,26 @@
+[
+  {
+    "identifier": "energy-evolution",
+    "gameName": "ENERGY EVOLUTION",
+    "gameType": "Strategy / Builder",
+    "gamePlayers": "2-4",
+    "gameLength": "< 120 min",
+    "gameDesc": "Earth needs new technologies to sustain humanity's unrelenting demand for power. Several companies aim to fulfill this need with innovative power-generating developments. The goal is to build cold fusion - a technology capable of producing infinite energy with net zero carbon. The company that develops cold fusion first will achieve market domination. Be careful, though - produce too much carbon in your attempt to generate energy, and there will be consequences. Choose a strategy and move quickly - before other players decide to shut you down for good!"
+  },
+  {
+    "identifier": "cosmic-conquest",
+    "gameName": "COSMIC CONQUEST",
+    "gameType": "Strategy / Builder",
+    "gamePlayers": "4-6",
+    "gameLength": "< 90 min",
+    "gameDesc": "A race tro reach the ends of the universe before your friends do!"
+  },
+  {
+    "identifier": "astro-terra",
+    "gameName": "ASTRO TERRA",
+    "gameType": "Strategy / Builder",
+    "gamePlayers": "2-4",
+    "gameLength": "< 120 min",
+    "gameDesc": "Create alliances with aliens and beat your friends"
+  }
+]

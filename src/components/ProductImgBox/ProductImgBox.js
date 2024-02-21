@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
 import "./productImgBox.scss";
 
-function ProductImgBox({ imgSrc, gameName, Desc }) {
+function ProductImgBox({ imgSrc, gameName, Desc, page }) {
   return (
     <>
-      <div className="productImgBox">
-        <img className="productImgBox__img" src={imgSrc} />
-        <div className="productImgBox__textContainer">
-          <p className="productImgBox__gameTitle">{gameName}</p>
-          <p className="productImgBox__gameDesc">{Desc}</p>
+      <Link to={page}>
+        <div className="productImgBox">
+          <img className="productImgBox__img" src={imgSrc} />
+          <div className="productImgBox__textContainer">
+            <p className="productImgBox__gameTitle">{gameName}</p>
+            <p className="productImgBox__gameDesc">{Desc}</p>
+          </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

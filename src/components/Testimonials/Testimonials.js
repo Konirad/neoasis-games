@@ -1,4 +1,3 @@
-
 import React from "react";
 
 //style
@@ -7,11 +6,12 @@ import "./testimonials.scss";
 //components
 import Quote from "../Quote/Quote";
 
-//assets 
+//assets
 import pic1 from "../../assets/06testimonials/temp img/pic1.png";
 import pic2 from "../../assets/06testimonials/temp img/pic2.png";
 import pic3 from "../../assets/06testimonials/temp img/pic3.png";
 import pic4 from "../../assets/06testimonials/temp img/pic4.png";
+import ellipses2 from "../../assets/13circles/CIRCLES 2.svg";
 
 function Testimonials() {
   const quotes = [
@@ -42,6 +42,8 @@ function Testimonials() {
       <div className="testimonials__headerContainer">
         <h3 className="testimonials__header">See what players are saying</h3>
       </div>
+
+      <img src={ellipses2} className="testimonials__ellipTwo" />
 
       <div className="testimonials__quotes">
         {quotes.map((quote, index) => {

@@ -1,0 +1,27 @@
+.sphere {
+  &__bright {
+    transform: rotate(20deg);
+
+    position: fixed;
+    right: -25px;
+    top: 300px;
+
+    animation: floatAnimation 9s infinite ease-in-out;
+
+    z-index: (-1);
+
+    @keyframes floatAnimation {
+      0% {
+        transform: translateY(0) rotate(15deg);
+      }
+
+      50% {
+        transform: translateY(-200px) rotate(-15deg);
+      }
+
+      100% {
+        transform: translateY(0) rotate(15deg);
+      }
+    }
+  }
+}
