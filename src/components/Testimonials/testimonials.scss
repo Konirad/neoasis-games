@@ -5,9 +5,14 @@
   &__headerContainer {
     width: 95%;
     height: 75px;
-    background: linear-gradient(to right, $highlight-bright, purple);
-    margin: 2rem auto;
+    border-color: purple;
+    border-image-slice: 1; 
+    border-style: solid;
     border-radius: 20px 0 20px 0;
+    //background: linear-gradient(to right, $highlight-bright, purple);
+
+    margin: 2rem auto;
+  
 
     display: flex;
     justify-content: center;
@@ -27,7 +32,7 @@
 
   &__header {
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: bolder;
 
     @media screen and (min-width: 476px) {
       font-size: 1.5rem;
@@ -52,16 +57,13 @@
     width: 80%;
     top: 700px;
     margin-left: -5rem;
-    
 
     z-index: -10;
 
     animation: ellipRotate 9s infinite ease-in-out;
 
-
-    @media screen and (min-width:500px) {
+    @media screen and (min-width: 500px) {
       width: 70%;
-
     }
 
     @include desktopStyle {

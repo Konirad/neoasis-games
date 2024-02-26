@@ -23,8 +23,18 @@ p {
 
   &__img {
     width: 70%;
+    height: 10rem;
     padding: -4rem;
     margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: box-shadow 0.25s ease-in-out;
+    border: 1px solid $highlight-bright;
+
+    &:hover {
+      box-shadow: unset;
+    }
 
     @include tabletStyle {
       width: 50%;
@@ -54,6 +64,12 @@ p {
     width: 75%;
     font-weight: bolder;
     margin: unset;
+    text-shadow: 2px 2px 3px black;
+    transition: text-shadow 0.25s ease;
+
+    &:hover {
+      text-shadow: unset;
+    }
 
     @media screen and (min-width: 500px) {
       font-size: 2rem;

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./productPage.scss";
 import ProductImgBox from "../../components/ProductImgBox/ProductImgBox";
 
-import prodImageA from "../../assets/07newWorlds/rectangle16.png";
-import prodImageB from "../../assets/07newWorlds/rectangle17.png";
-import prodImageC from "../../assets/07newWorlds/rectangle18.png";
+import prodImageA from "../../assets/images/ly2hpbcorzf91.png";
+import prodImageB from "../../assets/images/d426913b69e27fb2dbd2b82224adafa8.jpg";
+import prodImageC from "../../assets/images/traveling-through-the-multiverse-v0-014ym2qbbvy91.webp";
 
 function ProductPage() {
   const [products, setProducts] = useState([]);

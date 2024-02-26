@@ -1,16 +1,25 @@
 import "./footer.scss";
 
 import footerLogo from "../../assets/02 HEADER/LOGO MINT.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <>
       <div className="footer">
         <div className="footer__links">
-          <p className="footer__linkItem">ABOUT</p>
-          <p className="footer__linkItem">BLOG</p>
-          <p className="footer__linkItem">PRODUCTS</p>
-          <p className="footer__linkItem">CONTACT</p>
+          <Link to={"/about"}>
+            <p className="footer__linkItem">ABOUT</p>
+          </Link>
+          <Link to={"/blog"}>
+            <p className="footer__linkItem">BLOG</p>
+          </Link>
+          <Link to={"/products"}>
+            <p className="footer__linkItem">PRODUCTS</p>
+          </Link>
+          <Link to={"/contact"}>
+            <p className="footer__linkItem">CONTACT</p>
+          </Link>
         </div>
         <div className="footer__container">
           <img src={footerLogo} className="footer__logo" />

@@ -33,8 +33,16 @@
     background-image: url(../../assets/07newWorlds/rectangle16.png);
     background-size: cover;
     width: 75%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 10px;
+
+    @include tabletStyle {
+      height: 20rem;
+    }
 
     @include desktopStyle {
+      height: 24rem;
       display: none;
     }
   }
@@ -60,6 +68,9 @@
   &__images {
     @include desktopStyle {
       width: 28%;
+      height: 16rem;
+      object-fit: cover;
+      border-radius: 10px;
     }
   }
 }

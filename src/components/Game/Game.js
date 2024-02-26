@@ -1,8 +1,8 @@
 import "./game.scss";
 
-import energyEvolution from "../../assets/07newWorlds/rectangle16.png";
-import cosmicConquest from "../../assets/07newWorlds/rectangle17.png";
-import astroTerra from "../../assets/07newWorlds/rectangle18.png";
+import energyEvolution from "../../assets/images/ly2hpbcorzf91.png";
+import cosmicConquest from "../../assets/images/d426913b69e27fb2dbd2b82224adafa8.jpg";
+import astroTerra from "../../assets/images/traveling-through-the-multiverse-v0-014ym2qbbvy91.webp";
 
 import steamLogo from "../../assets/downloads/Steam_Logo.png";
 
