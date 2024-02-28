@@ -8,9 +8,9 @@ import ellip from "../../assets/13circles/CIRCLES 4.svg"
 import "./contactPage.scss";
 
 function ContactPage() {
-  const [state, handleSubmit] = useForm("temptemp");
+  const [state, handleSubmit] = useForm("xayrjjon");
   if (state.succeeded) {
-    return <p>We'll get back to you shortly!</p>;
+    return <p className="contactPage__success">We'll get back to you shortly!</p>;
   }
 
   return (

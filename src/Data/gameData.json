@@ -5,7 +5,8 @@
     "gameType": "Strategy / Builder",
     "gamePlayers": "2-4",
     "gameLength": "< 120 min",
-    "gameDesc": "Earth needs new technologies to sustain humanity's unrelenting demand for power. Several companies aim to fulfill this need with innovative power-generating developments. The goal is to build cold fusion - a technology capable of producing infinite energy with net zero carbon. The company that develops cold fusion first will achieve market domination. Be careful, though - produce too much carbon in your attempt to generate energy, and there will be consequences. Choose a strategy and move quickly - before other players decide to shut you down for good!"
+    "gameDesc": "Earth needs new technologies to sustain humanity's unrelenting demand for power. Several companies aim to fulfill this need with innovative power-generating developments. The goal is to build cold fusion - a technology capable of producing infinite energy with net zero carbon. The company that develops cold fusion first will achieve market domination. Be careful, though - produce too much carbon in your attempt to generate energy, and there will be consequences. Choose a strategy and move quickly - before other players decide to shut you down for good!",
+    "gameImg": "/assets/images/ly2hpbcorzf91.png"
   },
   {
     "identifier": "cosmic-conquest",
@@ -13,7 +14,8 @@
     "gameType": "Strategy / Builder",
     "gamePlayers": "4-6",
     "gameLength": "< 90 min",
-    "gameDesc": "A race tro reach the ends of the universe before your friends do!"
+    "gameDesc": "Embark on an exhilarating journey to explore the farthest reaches of the universe and strive to outpace your friends in this thrilling race to the cosmos! Traverse the cosmic expanse, uncovering the mysteries of distant galaxies, and push the boundaries of space exploration as you compete to reach the ultimate destination ahead of your fellow adventurers. As the cosmic pioneers, the stakes are high, and the first person to break through the outer limits of the cosmos will be crowned the ultimate winner. ",
+    "gameImg": "../assets/images/d426913b69e27fb2dbd2b82224adafa8.jpg"
   },
   {
     "identifier": "astro-terra",
@@ -21,6 +23,7 @@
     "gameType": "Strategy / Builder",
     "gamePlayers": "2-4",
     "gameLength": "< 120 min",
-    "gameDesc": "Create alliances with aliens and beat your friends"
+    "gameDesc": "An epic intergalactic adventure as an invasion sweeps across the cosmos. Engage in fierce battles with your friends to thwart the extraterrestrial onslaught or take an unexpected turn by forming strategic alliances with the enigmatic invaders. The fate of the universe hangs in the balance, and the coveted meta stone is the key to victory. As you navigate this cosmic clash, employ your tactical prowess, forge alliances, and overcome challenges to be the first player to seize the meta stone and emerge triumphant in the cosmic battleground.",
+    "gameImg": "./assets/images/traveling-through-the-multiverse-v0-014ym2qbbvy91.webp"
   }
 ]

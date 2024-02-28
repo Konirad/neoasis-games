@@ -1,0 +1,105 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.ourStoryPage {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include tabletStyle {
+      flex-direction: row;
+    }
+  }
+
+  &__textContainer {
+    margin: $mobile-margins;
+
+    @include tabletStyle {
+      margin: $desktop-margins;
+      margin-top: 1.5rem;
+    }
+
+    @include desktopStyle {
+      margin: 4rem;
+    }
+  }
+
+  &__text {
+    font-weight: 100;
+
+    @include tabletStyle {
+      font-size: 1.1rem;
+    }
+
+    @include desktopStyle {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    color: $accents;
+    font-size: 2rem;
+    margin-top: unset;
+
+    @include tabletStyle {
+      margin: unset;
+      font-size: 3rem;
+    }
+
+    @include desktopStyle {
+      font-size: 4rem;
+    }
+  }
+
+  &__img {
+    width: 90%;
+    margin: auto;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid $highlight-mellow;
+
+    @include tabletStyle {
+      width: 50%;
+      margin-left: $tablet-margins;
+      margin-top: 2rem;
+    }
+
+    @include desktopStyle {
+      margin: auto;
+      margin-left: $desktop-margins;
+    }
+  }
+}
+
+.photoAttribution {
+  margin: $mobile-margins;
+  color: $background;
+  opacity: 1;
+
+  &:hover {
+    color: white;
+    font-weight: 100;
+    opacity: .7;
+  }
+
+  p,
+  a {
+    color: $background;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  @include tabletStyle {
+    margin: $tablet-margins;
+  }
+
+  @include desktopStyle {
+    margin: $desktop-margins;
+  }
+
+  transition: color .5s ease;
+}

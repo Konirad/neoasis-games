@@ -11,9 +11,6 @@ function Footer() {
           <Link to={"/about"}>
             <p className="footer__linkItem">ABOUT</p>
           </Link>
-          <Link to={"/blog"}>
-            <p className="footer__linkItem">BLOG</p>
-          </Link>
           <Link to={"/products"}>
             <p className="footer__linkItem">PRODUCTS</p>
           </Link>

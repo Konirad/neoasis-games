@@ -31,7 +31,6 @@ function Header() {
           <ul className={`menu ${menuOpen ? "open" : ""}`}>
             <Link to={"/products"}><li className="hamburger-item">Products</li></Link>
             <Link to={"/about"}><li className="hamburger-item">About</li></Link>
-            <Link to={"/blog"}><li className="hamburger-item">Blog</li></Link>
             <Link to={"/contact"}><li className="hamburger-item">Contact</li></Link>
           </ul>
         </div>
@@ -40,7 +39,6 @@ function Header() {
             <ul className={`menuTablet`}>
               <Link to={"/products"}><li className="menuTablet__item">Products</li></Link>
               <Link to={"/about"}><li className="menuTablet__item">About</li></Link>
-              <Link to={"/blog"}><li className="menuTablet__item">Blog</li></Link>
               <Link to={"/contact"}><li className="menuTablet__item">Contact</li></Link>
             </ul>
           </div>

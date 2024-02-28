@@ -30,6 +30,7 @@ function GamePage() {
       gamePlayers={gamePlayers}
       gameLength={gameLength}
       gameDesc={gameDesc}
+      gameAtHand={gameAtHand}
     />
   );
 }

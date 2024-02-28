@@ -1,11 +1,30 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles//partials/mixins" as *;
 
 .game {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include tabletStyle {
+      flex-direction: row;
+    }
+  }
   &__name {
     color: $highlight-bright;
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
+
+    @include desktopStyle {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (min-width: 2200px) {
+      margin-bottom: 6rem;
+      
+    }
   }
 
   &__details {
@@ -16,14 +35,48 @@
     border: 1px solid $highlight-bright;
     border-radius: 5px;
     margin: 0 $mobile-margins;
+
+    @include tabletStyle {
+      margin: $tablet-margins;
+      font-size: 1.25rem;
+      width: 45%;
+    }
+
+    @include desktopStyle {
+      margin: $desktop-margins;
+      padding: 0.25rem;
+      font-size: 1.5rem;
+      width: 50%;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      //height: 22.5rem;
+    }
   }
 
   &__detailsItem {
-    font-size: .75rem;
+    font-size: 0.75rem;
+
+    @include tabletStyle {
+      font-size: 1;
+      text-align: center;
+
+      border-radius: 5px;
+      padding: 0.5rem;
+    }
   }
 
   &__desc {
     grid-column: span 2;
+
+    @include tabletStyle {
+      font-size: 1.25rem;
+      font-size: 1rem;
+    }
+
+    @include desktopStyle {
+      padding: 1.5rem;
+      padding-top: unset;
+      grid-column: span 4;
+    }
   }
 
   &__steam {
@@ -35,15 +88,57 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      scale: 103%;
+    }
+
+    @include desktopStyle {
+      width: 50%;
+      margin-left: 50%;
+      margin-top: -3rem;
+    }
   }
 
   &__cta {
     font-size: 2rem;
     margin-right: 1rem;
   }
+
+  &__image {
+    width: 75%;
+    border-radius: 15px;
+    height: 10rem;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 475px) {
+      height: 17rem;
+    }
+
+    @include tabletStyle {
+      height: 25rem;
+      width: 40%;
+      margin: auto;
+      margin-left: $tablet-margins;
+    }
+
+    @include desktopStyle {
+      margin-left: $desktop-margins;
+    }
+  }
 }
 
-
 .detailsRight {
-    text-align: right;
+  text-align: right;
+
+  @include tabletStyle {
+    text-align: center;
+  }
+
+  @include desktopStyle {
+    margin: auto;
+  }
 }

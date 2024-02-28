@@ -23,7 +23,7 @@ p {
 
   &__img {
     width: 70%;
-    height: 10rem;
+    height: 8rem;
     padding: -4rem;
     margin: auto;
     object-fit: cover;
@@ -32,16 +32,22 @@ p {
     transition: box-shadow 0.25s ease-in-out;
     border: 1px solid $highlight-bright;
 
+    transition: transform 0.2s ease;
+
     &:hover {
       box-shadow: unset;
     }
 
     @include tabletStyle {
-      width: 50%;
+      &:hover {
+        transform: scale(1.19);
+      }
+      height: 9rem;
     }
 
     @include desktopStyle {
       margin: unset;
+      height: 12rem;
     }
   }
 
