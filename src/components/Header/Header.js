@@ -29,6 +29,7 @@ function Header() {
           onClick={toggleMenu}
         >
           <ul className={`menu ${menuOpen ? "open" : ""}`}>
+            <Link to={"/"}><li className="hamburger-item">Home</li></Link>
             <Link to={"/products"}><li className="hamburger-item">Products</li></Link>
             <Link to={"/about"}><li className="hamburger-item">About</li></Link>
             <Link to={"/contact"}><li className="hamburger-item">Contact</li></Link>

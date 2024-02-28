@@ -9,6 +9,8 @@
 
     margin: $mobile-margins;
 
+    z-index: 99;
+
     @include tabletStyle {
       margin: 0 $tablet-margins;
     }
