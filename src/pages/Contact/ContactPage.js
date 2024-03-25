@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 //
-import ellip from "../../assets/13circles/CIRCLES 4.svg"
+import ellip from "../../assets/13circles/CIRCLES 4.svg";
 
 //styles
 import "./contactPage.scss";
@@ -10,7 +10,9 @@ import "./contactPage.scss";
 function ContactPage() {
   const [state, handleSubmit] = useForm("xayrjjon");
   if (state.succeeded) {
-    return <p className="contactPage__success">We'll get back to you shortly!</p>;
+    return (
+      <p className="contactPage__success">We'll get back to you shortly!</p>
+    );
   }
 
   return (
@@ -54,10 +56,17 @@ function ContactPage() {
         </form>
 
         <p className="contactPage__cta">
-          HAVE QUESTIONS? <br /> <span className="contactPage__ctaHighlight">WE'RE HERE TO HELP! </span>
+          HAVE QUESTIONS? <br />{" "}
+          <span className="contactPage__ctaHighlight">
+            WE'RE HERE TO HELP!{" "}
+          </span>
         </p>
 
-        <img src={ellip} className="contactPage__ellip"/>
+        <img
+          src={ellip}
+          className="contactPage__ellip"
+          alt="an ellipsis element designed to give the site visual depth"
+        />
       </div>
     </>
   );

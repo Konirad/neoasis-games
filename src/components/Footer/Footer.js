@@ -19,7 +19,7 @@ function Footer() {
           </Link>
         </div>
         <div className="footer__container">
-          <img src={footerLogo} className="footer__logo" />
+          <img src={footerLogo} className="footer__logo" alt="a plam tree logo" />
           <h1 className="footer__title">Neoasis Games</h1>
           <p className="footer__copyright">
             © 2024 Neo Oasis Games Inc. Neo Oasis Games and the NOG logo are ©

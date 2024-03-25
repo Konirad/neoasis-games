@@ -1,6 +1,6 @@
 import "./game.scss";
 
-import { Link, useOutlet, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import energyEvolution from "../../assets/images/ly2hpbcorzf91.png";
 import cosmicConquest from "../../assets/images/d426913b69e27fb2dbd2b82224adafa8.jpg";
@@ -43,7 +43,11 @@ function Game({
       <p className="game__name">{gameName}</p>
 
       <div className="game__container">
-        <img src={imageSrc} className="game__image" />
+        <img
+          src={imageSrc}
+          className="game__image"
+          alt="a scifi image that draws players into the game"
+        />
 
         <div className="game__details">
           <p className="game__detailsItem">
@@ -66,11 +70,6 @@ function Game({
           <p className="game__desc">{gameDesc}</p>
         </div>
       </div>
-
-      <img />
-      <img />
-      <img />
-      <img />
 
       <Link
         to={

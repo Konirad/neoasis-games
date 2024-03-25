@@ -6,7 +6,11 @@ function ProductImgBox({ imgSrc, gameName, Desc, page }) {
     <>
       <Link to={page}>
         <div className="productImgBox">
-          <img className="productImgBox__img" src={imgSrc} />
+          <img
+            className="productImgBox__img"
+            src={imgSrc}
+            alt="a dynamic image that is produced based on the page in the url"
+          />
           <div className="productImgBox__textContainer">
             <p className="productImgBox__gameTitle">{gameName}</p>
             <p className="productImgBox__gameDesc">{Desc}</p>

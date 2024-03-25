@@ -7,7 +7,7 @@ function About() {
     <>
       <h2 className="ourStoryPage__header">OUR STORY</h2>
       <div className="ourStoryPage__container">
-        <img src={MnJ} className="ourStoryPage__img" />
+        <img src={MnJ} className="ourStoryPage__img" alt="a young couple smiles and holds hands" />
         <div className="ourStoryPage__textContainer">
           <p className="ourStoryPage__text">
             Mike is an engineer and Julia works in media. They’ve enjoyed

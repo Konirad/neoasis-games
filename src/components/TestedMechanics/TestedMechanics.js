@@ -10,7 +10,7 @@ function TestedMechanics() {
     <>
       <div className="mechanics">
         <h2 className="mechanics__header">TESTED MECHANICS</h2>
-        <img className="mechanics__lineHorz" src={horzLine} />
+        <img className="mechanics__lineHorz" src={horzLine} alt="a horizontal line acts as a visual divider" />
         <div className="mechanics__blurbCollection">
           <div className="mechanics__blurbCollectionLeft">
             <TestedBlurb rotationOpt={'optA'} blurb={"REPLAYABILITY"} />
@@ -19,7 +19,7 @@ function TestedMechanics() {
             <TestedBlurb rotationOpt={'optC'} blurb={"PLAYER AGENCY"} />
           </div>
 
-          <img className="mechanics__lineVert" src={vertLine} />
+          <img className="mechanics__lineVert" src={vertLine} alt="a vertical line acts as a visual divider" />
 
           <div className="mechanics__blurbCollectionRight">
             <TestedBlurb rotationOpt={'optC'} blurb={"STUNNING VISUALS"} />

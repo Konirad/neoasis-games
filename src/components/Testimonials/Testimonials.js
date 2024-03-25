@@ -43,7 +43,11 @@ function Testimonials() {
         <h3 className="testimonials__header">See what players are saying</h3>
       </div>
 
-      <img src={ellipses2} className="testimonials__ellipTwo" />
+      <img
+        src={ellipses2}
+        className="testimonials__ellipTwo"
+        alt="an ellipses element designed to give the site visual depth"
+      />
 
       <div className="testimonials__quotes">
         {quotes.map((quote, index) => {

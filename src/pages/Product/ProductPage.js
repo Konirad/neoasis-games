@@ -45,7 +45,7 @@ function ProductPage() {
     ));
 
     setProducts(productComponents);
-  }, []);
+  }, [games]);
 
   return (
     <>

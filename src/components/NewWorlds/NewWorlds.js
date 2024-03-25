@@ -1,5 +1,5 @@
 //hooks
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 //styles
 import "./newWorlds.scss";
@@ -27,7 +27,6 @@ function NewWorlds() {
 
       setIndex((prevIndex) => (prevIndex + 1) % picturesArray.length);
     }
-    ////////////////////////////////////////////////////
 
     const intervalId = setInterval(changeWorldsBg, 4000);
     return () => clearInterval(intervalId);
@@ -49,9 +48,21 @@ function NewWorlds() {
             />
           </div>
           <div className="newWorlds__imagesContainer">
-            <img className="newWorlds__images" src={discoverImg1} />
-            <img className="newWorlds__images" src={discoverImg2} />
-            <img className="newWorlds__images" src={discoverImg3} />
+            <img
+              className="newWorlds__images"
+              src={discoverImg1}
+              alt="a cyberpunk city scape"
+            />
+            <img
+              className="newWorlds__images"
+              src={discoverImg2}
+              alt="a dystopian planet littered with buildings"
+            />
+            <img
+              className="newWorlds__images"
+              src={discoverImg3}
+              alt="a man floats as he comes in contact with an alien presence"
+            />
           </div>
         </Link>
       </div>

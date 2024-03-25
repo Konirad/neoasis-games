@@ -13,7 +13,11 @@ function Hero() {
     <>
       <div className="hero__container">
         <div className="hero__copyContainer">
-          <img src={ellipses} className="hero__ellip" />
+          <img
+            src={ellipses}
+            className="hero__ellip"
+            alt="an ellipses that rotates and helps give the website visual depth"
+          />
           <h2 className="hero__header">
             BUILDING <span className="hero__highlight">GAMES OF THE </span>{" "}
             FUTURE
@@ -28,11 +32,19 @@ function Hero() {
               "https://steamcommunity.com/sharedfiles/filedetails/?id=2712775836&searchtext=energy+evolution"
             }
           >
-            <img className="hero__btn" src={heroBtn} />
+            <img
+              className="hero__btn"
+              src={heroBtn}
+              alt="button linking to the game webpage"
+            />
           </Link>
         </div>
         <div className="hero__imageContainer">
-          <img className="hero__image" src={heroImage} />
+          <img
+            className="hero__image"
+            src={heroImage}
+            alt="a colorful gameboard"
+          />
         </div>
         <Sphere />
       </div>
