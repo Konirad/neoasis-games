@@ -1,5 +1,5 @@
 //hooks
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 //styles
 import "./newWorlds.scss";
@@ -12,9 +12,11 @@ import { Link } from "react-router-dom";
 
 function NewWorlds() {
   const [index, setIndex] = useState(0);
-  const picturesArray = [discoverImg1, discoverImg2, discoverImg3];
+  const picturesArrayRef = useRef([discoverImg1, discoverImg2, discoverImg3]);
 
   useEffect(() => {
+    const picturesArray = picturesArrayRef.current;
+
     const newWorldsBox = document.querySelector(".newWorlds__image");
 
     picturesArray.forEach((imgSrc) => {
@@ -30,7 +32,7 @@ function NewWorlds() {
 
     const intervalId = setInterval(changeWorldsBg, 4000);
     return () => clearInterval(intervalId);
-  }, [index]);
+  }, [index, picturesArrayRef]);
 
   return (
     <>
@@ -42,7 +44,7 @@ function NewWorlds() {
           </h2>
           <div className="newWorlds__imageContainer">
             <img
-              src={picturesArray[index]}
+              src={picturesArrayRef.current[index]}
               alt="Discover New World"
               className="newWorlds__image"
             />
