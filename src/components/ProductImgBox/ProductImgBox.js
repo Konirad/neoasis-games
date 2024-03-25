@@ -9,7 +9,7 @@ function ProductImgBox({ imgSrc, gameName, Desc, page }) {
           <img
             className="productImgBox__img"
             src={imgSrc}
-            alt="a dynamic image that is produced based on the page in the url"
+            alt="a dystopian future"
           />
           <div className="productImgBox__textContainer">
             <p className="productImgBox__gameTitle">{gameName}</p>

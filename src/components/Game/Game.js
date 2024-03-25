@@ -46,7 +46,7 @@ function Game({
         <img
           src={imageSrc}
           className="game__image"
-          alt="a scifi image that draws players into the game"
+          alt="a dystopian future hellscape"
         />
 
         <div className="game__details">
@@ -79,7 +79,11 @@ function Game({
         {imageSrc === energyEvolution && (
           <div className="game__ctaBox">
             <p className="game__cta">Play it on</p>
-            <img className="game__steam" src={steamLogo} />
+            <img
+              className="game__steam"
+              src={steamLogo}
+              alt="the steam games logo"
+            />
           </div>
         )}
       </Link>
