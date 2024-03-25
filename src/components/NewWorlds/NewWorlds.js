@@ -30,7 +30,7 @@ function NewWorlds() {
 
     const intervalId = setInterval(changeWorldsBg, 4000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [index]);
 
   return (
     <>
